@@ -1,3 +1,5 @@
+/**Algorithms: 
+ * 1. Find the Symmetric DifferencePassed */
 function sym(args) {
   let argv = [...arguments];
   let setOfTwo=argv[0];
