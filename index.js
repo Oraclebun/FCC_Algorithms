@@ -17,3 +17,13 @@ var newInv = [
     [7, "Toothpaste"]
 ];
 updateInventory(curInv, newInv);
+
+const permAlone = require("./3.noRepeatsPlease");
+//permAlone("aab"); //should return 2.
+//permAlone("aaa"); //should return 0.
+//permAlone("abcdefa"); //should return 3600.
+//permAlone("abfdefa"); //should return 2640.
+//permAlone("zzzzzzzz")); //should return 0.
+//permAlone("a"); //should return 1.
+//permAlone("aaab"); //should return 0.
+permAlone("aaabb"); //should return 12.
