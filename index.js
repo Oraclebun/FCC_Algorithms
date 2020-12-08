@@ -27,3 +27,11 @@ const permAlone = require("./3.noRepeatsPlease");
 //permAlone("a"); //should return 1.
 //permAlone("aaab"); //should return 0.
 permAlone("aaabb"); //should return 12.
+
+
+const pairwise = require("./4.pairWise");
+pairwise([1,4,2,3,0,5], 7);  //should return 11;
+//pairwise([1, 3, 2, 4], 4);
+//pairwise([1, 1, 1], 2);
+//pairwise([0, 0, 0, 0, 1, 1], 1);
+//pairwise([], 100)
