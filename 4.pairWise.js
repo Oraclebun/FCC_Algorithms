@@ -15,4 +15,40 @@ function pairwise(arr, arg) {
   return sum;
 }
 
+/** 
+2. Using hashmap (object) method 
+function pairwise(arr,arg){
+  let map = Object.assign({});
+  let indices = [];
+
+//1. Create a map of all elements in the array
+  for(let i=0; i<arr.length; i++){
+    if(arr.indexOf(arg-arr[i])==-1) continue;
+      map[i] = arr[i];
+  }
+  
+//2. For each element in array, find the complement
+  for(let i=0; i<arr.length; i++){
+    //if map is empty, stop the loop
+    if (Object.keys(map).length == 0) break;
+    //complement idx is the map keys given the sum-element
+    let complement = Object.keys(map).find(key => map[key] === arg-arr[i]);
+    //if complement does not exist, delete the key,value pair 
+    if (complement == undefined) {
+      delete map[i];
+      continue;
+    }
+    //if complement idx not in array & complement idx is not itself
+    if (!indices.includes(complement) && complement!=i){
+      indices.push(i); 
+      indices.push(parseInt(complement));
+      delete map[i];
+      delete map[complement];
+    }
+    }
+  
+  return indices.reduce((a,b) => a+b,0);
+}
+
+*/
 module.exports = pairwise;

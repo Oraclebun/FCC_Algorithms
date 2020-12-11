@@ -35,3 +35,9 @@ pairwise([1,4,2,3,0,5], 7);  //should return 11;
 //pairwise([1, 1, 1], 2);
 //pairwise([0, 0, 0, 0, 1, 1], 1);
 //pairwise([], 100)
+
+const bubbleSort = require("./5.bubbleSort");
+bubbleSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]);
+
+const selectionSort = require("./6.selectionSort");
+selectionSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92])
