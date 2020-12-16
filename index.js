@@ -44,3 +44,6 @@ selectionSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 9
 
 const insertionSort = require("./7.insertionSort");
 insertionSort([1, 4, 2, 8, 345, 123, 43, 32, 5643, 63, 123, 43, 2, 55, 1, 234, 92]);
+
+const quickSort = require ("./8.quickSort");
+quickSort([1,4,2,8,345,123,43,32,5643,63,123,43,2,55,1,234,92]);
